@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "pnpm --filter ./frontend lint && pnpm --filter ./backend lint",
+    "test": "jest",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "Yasir Gaji",
