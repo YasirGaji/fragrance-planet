@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import { ChakraProviderWrapper } from './chakra-provider';
 import './globals.css';
 import Footer from '@/components/Footer';
+import { Provider } from '@/components/ui/provider';
 
 export const metadata = {
   title: 'Fragrance Planet',
@@ -14,12 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <ChakraProviderWrapper>
         <body>
-          <Header />
-          <main style={{ minHeight: '90vh' }}>{children}</main>
-          <Footer />
+          <Provider>
+            <Header />
+            <main className="main-content" style={{ minHeight: '90vh' }}>{children}</main>
+            <Footer />
+          </Provider>
         </body>
       </ChakraProviderWrapper>
     </html>

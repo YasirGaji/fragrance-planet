@@ -51,7 +51,6 @@ const customConfig = defineConfig({
         "50%": { transform: "translateX(100%)" },
       },
     },
-
   
   },
 });
