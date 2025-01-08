@@ -19,11 +19,11 @@ const customConfig = defineConfig({
         brand: {
           50: { value: '#FCB700' }, //primary color
           100: { value: '#333333' }, //secondary color
-          200: { value: '#FFFFFF' }, //background color 
+          200: { value: '#FFFFFF' }, //background color
           300: { value: '#F0EFED' }, //background hover color
           400: { value: '#333333' }, //text color
 
-          500: { value: '#D3CED1' }, //navbar light background color 
+          500: { value: '#D3CED1' }, //navbar light background color
           600: { value: '#0A0F29' }, //navbar dark background color
         },
       },
@@ -50,22 +50,32 @@ const customConfig = defineConfig({
           primary: { value: '{colors.brand.50}' },
           secondary: { value: '{colors.brand.100}' },
           background: { value: '{colors.brand.400}' },
-          navbar: { DEFAULT: {
-            value: {
-              _light: '{colors.brand.500}',
-              _dark: '{colors.brand.600}',
-            },
-          }, },
-          icon: { DEFAULT: {
-            value: {
-              _light: '{colors.brand.500}',
-              _dark: '{colors.brand.600}',
-            },
-          }, },
           backgroundHover: { value: '{colors.brand.300}' },
-          text: { value: '{colors.brand.400}' },
+          navbar: {
+            DEFAULT: {
+              value: {
+                _light: '{colors.brand.500}',
+                _dark: '{colors.brand.600}',
+              },
+            },
+          },
+          icon: {
+            DEFAULT: {
+              value: {
+                _light: '{colors.brand.500}',
+                _dark: '{colors.brand.600}',
+              },
+            },
+          },
+          text: {
+            DEFAULT: {
+              value: {
+                _light: '{colors.brand.400}',
+                _dark: '{colors.brand.200}',
+              },
+            },
+          },
         },
-
 
         fg: {
           DEFAULT: {
@@ -98,5 +108,3 @@ export const system = createSystem(
   defaultConfig,
   customConfig
 );
-
-
