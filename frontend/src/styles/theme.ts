@@ -25,6 +25,8 @@ const customConfig = defineConfig({
 
           500: { value: '#D3CED1' }, //navbar light background color
           600: { value: '#0A0F29' }, //navbar dark background color
+          700: { value: '#27272A' }, //newsletter section dark color
+          800: { value: '#27272A' }, //footer section light color
         },
       },
 
@@ -55,6 +57,22 @@ const customConfig = defineConfig({
             DEFAULT: {
               value: {
                 _light: '{colors.brand.500}',
+                _dark: '{colors.brand.600}',
+              },
+            },
+          },
+          newsletter: {
+            DEFAULT: {
+              value: {
+                _light: '{colors.brand.500}',
+                _dark: '{colors.brand.700}',
+              },
+            },
+          },
+          footer: {
+            DEFAULT: {
+              value: {
+                _light: '{colors.brand.800}',
                 _dark: '{colors.brand.600}',
               },
             },
