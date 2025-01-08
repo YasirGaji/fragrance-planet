@@ -1,8 +1,8 @@
 import Header from '@/components/Header';
-import { ChakraProviderWrapper } from './chakra-provider';
-import './globals.css';
+// import './globals.css';
 import Footer from '@/components/Footer';
 import { Provider } from '@/components/ui/provider';
+import { ColorModeProvider } from '@/components/ui/color-mode';
 
 export const metadata = {
   title: 'Fragrance Planet',
@@ -16,15 +16,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ChakraProviderWrapper>
         <body>
           <Provider>
-            <Header />
-            <main className="main-content" style={{ minHeight: '90vh' }}>{children}</main>
-            <Footer />
+            <ColorModeProvider>
+              <Header />
+              <main className="main-content" style={{ minHeight: '90vh' }}>
+                {children}
+              </main>
+              <Footer />
+            </ColorModeProvider>
           </Provider>
         </body>
-      </ChakraProviderWrapper>
     </html>
   );
 }
