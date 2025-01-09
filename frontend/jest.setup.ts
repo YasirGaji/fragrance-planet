@@ -4,7 +4,6 @@ import 'structured-clone';
 // Safer implementation of structuredClone polyfill
 if (typeof global.structuredClone !== 'function') {
   global.structuredClone = function structuredClone(value) {
-    // Handle null and undefined
     if (value === null || value === undefined) {
       return value;
     }
@@ -14,17 +13,20 @@ if (typeof global.structuredClone !== 'function') {
       if (typeof value === 'object') {
         return JSON.parse(JSON.stringify(value));
       }
+
       // For primitive values, return directly
       return value;
     } catch (error) {
       console.warn('structuredClone polyfill failed:', error);
-      // Return a shallow copy as fallback
+
+      // Returns a shallow copy as fallback
       return Array.isArray(value) ? [...value] : { ...value };
     }
   };
 }
 
 // Window matchMedia mock
+
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: jest.fn().mockImplementation(query => ({
@@ -40,9 +42,11 @@ Object.defineProperty(window, 'matchMedia', {
 });
 
 // Error handling
+
 const originalError = console.error;
 console.error = (...args) => {
-  // Ignore specific React errors during testing
+  // Ignores specific React errors during testing
+  
   if (typeof args[0] === 'string' && 
       (args[0].includes('Warning:') || 
        args[0].includes('Error:'))) {
