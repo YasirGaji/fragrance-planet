@@ -1,4 +1,4 @@
-import Header from '@/components/Header';
+import Navbar from '@/components/Navbar';
 // import './globals.css';
 import Footer from '@/components/Footer';
 import { Provider } from '@/components/ui/provider';
@@ -19,7 +19,7 @@ export default function RootLayout({
         <body>
           <Provider>
             <ColorModeProvider>
-              <Header />
+              <Navbar />
               <main className="main-content" style={{ minHeight: '90vh' }}>
                 {children}
               </main>

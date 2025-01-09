@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { Box, Heading, Text } from "@chakra-ui/react";
+import Header from '@/components/Header';
+import { Box } from '@chakra-ui/react';
 
 export default function HomePage() {
   return (
-    <Box p={8} >
-      <Heading>Welcome to Fragrance Planet</Heading>
-      <Text>Your favorite perfume store online!</Text>
+    <Box p={8}>
+      <Header />
     </Box>
   );
 }
