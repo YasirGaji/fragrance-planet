@@ -1,7 +1,8 @@
 import '@testing-library/jest-dom';
 import 'structured-clone';
 
-// Safer implementation of structuredClone polyfill
+// implementation of structuredClone polyfill
+
 if (typeof global.structuredClone !== 'function') {
   global.structuredClone = function structuredClone(value) {
     if (value === null || value === undefined) {
