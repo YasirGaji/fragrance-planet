@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-'use client';
+"use client";
 
 import {
   Box,
@@ -13,10 +13,9 @@ import {
   Link,
   Fieldset,
   useBreakpointValue,
-} from '@chakra-ui/react';
-import { useState } from 'react';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
-import { Field } from '@/components/ui/field';
+} from "@chakra-ui/react";
+import { useState } from "react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
 interface NewsletterFormData {
   email: string;
@@ -24,7 +23,7 @@ interface NewsletterFormData {
 
 const Footer = () => {
   // State for form handling
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isError, setIsError] = useState(false);
 
   // Responsive column count for the grid
@@ -33,13 +32,13 @@ const Footer = () => {
   // Newsletter submission handler
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !email.includes('@')) {
+    if (!email || !email.includes("@")) {
       setIsError(true);
       return;
     }
     // Handle the newsletter subscription logic here
-    console.log('Newsletter subscription:', email);
-    setEmail('');
+    console.log("Newsletter subscription:", email);
+    setEmail("");
     setIsError(false);
   };
 
@@ -61,7 +60,7 @@ const Footer = () => {
           >
             <Text
               color="brand.text"
-              fontSize={{ base: 'xl', md: 'lg' }}
+              fontSize={{ base: "xl", md: "lg" }}
               fontWeight="medium"
               maxW="349px"
             >
@@ -75,7 +74,7 @@ const Footer = () => {
                 borderRadius="md"
                 p={3}
                 h="70px"
-                background={{ base: '', md: 'gray.200' }}
+                background={{ base: "", md: "gray.200" }}
               >
                 <Box hideBelow="md">
                   <HStack gap={4}>
@@ -85,7 +84,7 @@ const Footer = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       bg="white"
                       color="gray.800"
-                      _placeholder={{ color: 'gray.500' }}
+                      _placeholder={{ color: "gray.500" }}
                       size="lg"
                       borderRadius="md"
                     />
@@ -94,7 +93,7 @@ const Footer = () => {
                       bg="brand.primary"
                       size="md"
                       px={10}
-                      _hover={{ bg: 'brand.primary' }}
+                      _hover={{ bg: "brand.primary" }}
                       w="114px"
                     >
                       <Text fontSize={14} color="white">
@@ -112,7 +111,7 @@ const Footer = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       bg="white"
                       color="gray.800"
-                      _placeholder={{ color: 'gray.500' }}
+                      _placeholder={{ color: "gray.500" }}
                       size="lg"
                       borderRadius="md"
                     />
@@ -122,7 +121,7 @@ const Footer = () => {
                       size="md"
                       my={5}
                       px={10}
-                      _hover={{ bg: 'brand.primary' }}
+                      _hover={{ bg: "brand.primary" }}
                       w="114px"
                     >
                       <Text fontSize={14} color="white">
@@ -223,7 +222,7 @@ const Footer = () => {
           pt={8}
           px={4}
         >
-          © Copyright Fragrance Planet {new Date().getFullYear()} By{' '}
+          © Copyright Fragrance Planet {new Date().getFullYear()} By{" "}
           <Link href="https://www.yasirgaji.com" color="brand.primary">
             Yasir Gaji
           </Link>
