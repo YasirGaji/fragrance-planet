@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Box,
@@ -9,7 +9,7 @@ import {
   HStack,
   Text,
   VStack,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 import {
   DrawerBackdrop,
   DrawerBody,
@@ -19,22 +19,22 @@ import {
   DrawerRoot,
   DrawerTitle,
   DrawerTrigger,
-} from '@/components/ui/drawer';
+} from "@/components/ui/drawer";
 import {
   MenuContent,
   MenuItem,
   MenuRoot,
   MenuTrigger,
-} from '@/components/ui/menu';
-import { Search, ShoppingCart, GiftIcon, Menu } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { ColorModeButton } from './ui/color-mode';
-import { InputGroup } from './ui/input-group';
-import WomenIcon from './icons/womenIcon';
-import MenIcon from './icons/menIcon';
-import UnisexIcon from './icons/unisexIcon';
-import BestsellerIcon from './icons/bestsellerIcon';
-import FilterMenuIcon from './icons/filtermenuIcon';
+} from "@/components/ui/menu";
+import { Search, ShoppingCart, GiftIcon, Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ColorModeButton } from "./ui/color-mode";
+import { InputGroup } from "./ui/input-group";
+import WomenIcon from "./icons/womenIcon";
+import MenIcon from "./icons/menIcon";
+import UnisexIcon from "./icons/unisexIcon";
+import BestsellerIcon from "./icons/bestsellerIcon";
+import FilterMenuIcon from "./icons/filtermenuIcon";
 
 const Navbar = () => {
   return (
@@ -150,7 +150,7 @@ const Navbar = () => {
                 borderRadius="md"
                 borderColor="brand.text"
                 _focus={{
-                  borderColor: 'brand.primary',
+                  borderColor: "brand.primary",
                 }}
               />
             </InputGroup>
@@ -180,12 +180,12 @@ const Navbar = () => {
 
           {/* Cart and About */}
           <Flex pl={12} gap={4} justify="space-between" align="center">
-            <Link href="/cart" _hover={{ textDecoration: 'underline' }}>
+            <Link href="/cart" _hover={{ textDecoration: "underline" }}>
               Cart
               <ShoppingCart size="17px" />
             </Link>
 
-            <Link href="/about" _hover={{ textDecoration: 'underline' }}>
+            <Link href="/about" _hover={{ textDecoration: "underline" }}>
               About us
             </Link>
           </Flex>
@@ -212,7 +212,7 @@ const Navbar = () => {
 
           {/* Cart and Menu Icons */}
           <Flex gap={4} align="center">
-            <Link href="/cart" _hover={{ textDecoration: 'underline' }}>
+            <Link href="/cart" _hover={{ textDecoration: "underline" }}>
               <ShoppingCart size={24} />
             </Link>
 
@@ -220,7 +220,9 @@ const Navbar = () => {
               <DrawerBackdrop />
 
               <DrawerTrigger asChild>
-                <Menu size={24} />
+                <Box as="button" aria-label="menu">
+                  <Menu size={24} />
+                </Box>
               </DrawerTrigger>
 
               <DrawerContent bg="brand.navbar" maxW="320px">
@@ -380,7 +382,7 @@ const Navbar = () => {
                 borderRadius="md"
                 borderColor="brand.text"
                 _focus={{
-                  borderColor: 'brand.primary',
+                  borderColor: "brand.primary",
                 }}
               />
             </InputGroup>
