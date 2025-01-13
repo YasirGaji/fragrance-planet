@@ -48,7 +48,7 @@ const Navbar = () => {
       top={0}
       bg="brand.navbar"
       zIndex={4}
-      boxShadow="lg"
+      shadow="2xl"
     >
       {/* Desktop */}
 
@@ -87,53 +87,73 @@ const Navbar = () => {
 
             <MenuContent>
               <MenuItem value="new-txt-a">
-                <WomenIcon />
-                <Box flex="1">Women</Box>
+                <Link href="/women">
+                  <WomenIcon />
+                  <Box flex="1">Women</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="new-file-a">
-                <MenIcon />
-                <Box flex="1">Men</Box>
+                <Link href="/men">
+                  <MenIcon />
+                  <Box flex="1">Men</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="new-win-a">
-                <UnisexIcon />
-                <Box flex="1">Unisex</Box>
+                <Link href="/unisex">
+                  <UnisexIcon />
+                  <Box flex="1">Unisex</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="open-file-a">
-                <BestsellerIcon />
-                <Box flex="1">Best Sellers</Box>
+                <Link href="/bestsellers">
+                  <BestsellerIcon />
+                  <Box flex="1">Best Sellers</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="export-a">
-                <BestsellerIcon />
-                <Box flex="1">Recommended</Box>
+                <Link href="/recommended">
+                  <BestsellerIcon />
+                  <Box flex="1">Recommended</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="export-b">
-                <UnisexIcon />
-                <Box flex="1">Body Mists</Box>
+                <Link href="/bodymists">
+                  <UnisexIcon />
+                  <Box flex="1">Body Mists</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="export-c">
-                <UnisexIcon />
-                <Box flex="1">Celebrity</Box>
+                <Link href="/celebrity">
+                  <UnisexIcon />
+                  <Box flex="1">Celebrity</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="export-d">
-                <UnisexIcon />
-                <Box flex="1">Miniatures</Box>
+                <Link href="/miniatures">
+                  <UnisexIcon />
+                  <Box flex="1">Miniatures</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="export-e">
-                <GiftIcon />
-                <Box flex="1">Gift sets</Box>
+                <Link href="/giftsets">
+                  <GiftIcon />
+                  <Box flex="1">Gift sets</Box>
+                </Link>
               </MenuItem>
 
               <MenuItem value="export-f">
-                <UnisexIcon />
-                <Box flex="1">Perfume oil</Box>
+                <Link href="/perfumeoil">
+                  <UnisexIcon />
+                  <Box flex="1">Perfume oil</Box>
+                </Link>
               </MenuItem>
             </MenuContent>
           </MenuRoot>
