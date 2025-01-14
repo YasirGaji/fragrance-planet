@@ -28,6 +28,8 @@ const customConfig = defineConfig({
           600: { value: "#0A0F29" }, //navbar dark background color
           700: { value: "#27272A" }, //newsletter section dark color
           800: { value: "#27272A" }, //footer section light color
+          900: { value: "#E4E4E7" }, //hero Products section light color
+          1000: { value: "#121E5E" }, //hero Products title section light color
         },
       },
 
@@ -91,6 +93,22 @@ const customConfig = defineConfig({
               value: {
                 _light: "{colors.brand.400}",
                 _dark: "{colors.brand.200}",
+              },
+            },
+          },
+          HeroProducts: {
+            DEFAULT: {
+              value: {
+                _light: "{colors.brand.900}",
+                _dark: "{colors.brand.800}",
+              },
+            },
+          },
+          HeroProductsTitle: {
+            DEFAULT: {
+              value: {
+                _light: "{colors.brand.1000}",
+                _dark: "{colors.brand.50}",
               },
             },
           },

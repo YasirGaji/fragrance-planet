@@ -133,6 +133,7 @@ const Header = () => {
             justifyContent="center"
             alignItems="center"
             position="relative"
+            rounded="xl"
             mt={{ base: 8, md: 0 }}
           >
             <Box

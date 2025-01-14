@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import Header from '@/components/Header';
-import { Box } from '@chakra-ui/react';
+import Header from "@/components/Header";
+import HeroProducts from "@/components/HeroProducts";
+import { Box } from "@chakra-ui/react";
 
 export default function HomePage() {
   return (
-    <Box p={8}>
-      <h1>
+    <Box p={0}>
       <Header />
-      </h1>
+      <HeroProducts />
     </Box>
   );
 }
