@@ -8,6 +8,7 @@ import {
   Grid,
   GridItem,
   Image,
+  Flex,
 } from "@chakra-ui/react";
 import ImageSlider from "./ImageSlider";
 import FreeShippingIcon from "./icons/freeShippingIcon";
@@ -175,38 +176,40 @@ const Header = () => {
           </GridItem>
 
           {/* Features (Mobile) */}
-          <Grid
-            templateColumns={{ base: "1fr, 1fr", md: "repeat(4, 1fr)" }}
-            p={6}
-            bg="brand.navbar"
-            rounded="xl"
-            shadow="2xl"
-            display={{ base: "flex", md: "none" }}
-            alignItems="center"
-            justifyContent="center"
-            maxW="315px"
-            overflow="hidden"
-          >
-            {features.map((feature, index) => (
-              <Box
-                key={index}
-                display="flex"
-                alignItems="center"
-                textAlign="left"
-                justifyItems="space-between"
-              >
-                <Box as={feature.icon} />
-                <Text
-                  fontSize={{ base: "7px", md: "sm" }}
-                  width={{ base: "", md: "41px" }}
-                  pl={1}
-                  fontWeight="bold"
+          <Flex align="center" justifyContent="center">
+            <Grid
+              templateColumns={{ base: "1fr, 1fr", md: "repeat(4, 1fr)" }}
+              p={6}
+              bg="brand.navbar"
+              rounded="xl"
+              shadow="2xl"
+              display={{ base: "flex", md: "none" }}
+              alignItems="center"
+              justifyContent="center"
+              maxW="315px"
+              overflow="hidden"
+            >
+              {features.map((feature, index) => (
+                <Box
+                  key={index}
+                  display="flex"
+                  alignItems="center"
+                  textAlign="left"
+                  justifyItems="space-between"
                 >
-                  {feature.title}
-                </Text>
-              </Box>
-            ))}
-          </Grid>
+                  <Box as={feature.icon} />
+                  <Text
+                    fontSize={{ base: "7px", md: "sm" }}
+                    width={{ base: "", md: "41px" }}
+                    pl={1}
+                    fontWeight="bold"
+                  >
+                    {feature.title}
+                  </Text>
+                </Box>
+              ))}
+            </Grid>
+          </Flex>
         </Grid>
       </Container>
     </Box>

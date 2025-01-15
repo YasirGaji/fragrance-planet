@@ -47,12 +47,14 @@ const HeroProducts = () => {
           title="Perfume Set"
           discount="30% discount off!"
           products={productData}
+          displayMode="carousel"
         />
 
         <ProductSection
           title="Designers"
           discount="30% discount off!"
           products={productData}
+          displayMode="carousel"
         />
       </Container>
     </Box>
