@@ -122,7 +122,7 @@ const ProductSection: React.FC<ProductSectionProps> = ({
           )}
 
           <Flex
-            width={{ base: "290px", md: "1120px" }}
+            width={{ base: "280px", md: "1120px" }}
             ref={scrollContainerRef}
             overflowX="hidden"
             gap={6}
