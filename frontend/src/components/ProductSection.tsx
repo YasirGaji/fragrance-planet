@@ -94,7 +94,7 @@ const ProductSection: React.FC<ProductSectionProps> = ({
               alignItems="center"
               _hover={{ bg: "gray.100" }}
             >
-              <ChevronLeft size={24} />
+              <ChevronLeft size={24} color="black" />
             </Box>
           )}
 
@@ -117,7 +117,7 @@ const ProductSection: React.FC<ProductSectionProps> = ({
               alignItems="center"
               _hover={{ bg: "gray.100" }}
             >
-              <ChevronRight size={24} />
+              <ChevronRight size={24} color="black" />
             </Box>
           )}
 

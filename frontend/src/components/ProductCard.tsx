@@ -38,40 +38,66 @@ const ProductCard: React.FC<ProductCardProps> = ({
           src={image}
           alt={title}
           width="full"
-          height="292px"
+          height="280px"
           objectFit="cover"
+          roundedBottomLeft="4xl"
         />
 
         {/* Product Info */}
-        <VStack gap={2} p={4} align="start" bg="brand.navbar">
-          <Collapsible.Root>
-            <Collapsible.Trigger>
-              <Text cursor="pointer" fontSize="lg" fontWeight="medium">
-                {title}
-              </Text>
-            </Collapsible.Trigger>
-            <Collapsible.Content>
-              <Box p={4}>
-                <Text color="brand.text">{description}</Text>
-              </Box>
-            </Collapsible.Content>
-          </Collapsible.Root>
+        {/* <Box
+          position="absolute"
+          top={0}
+          right={0}
+          bg="brand.primary"
+          color="white"
+          p={2}
+          roundedBottomLeft="4xl"
+        >
+          New
+        </Box> */}
 
-          <Text fontSize="xl" fontWeight="bold" color="brand.HeroProductsTitle">
-            {currency} {price.toLocaleString()}
-          </Text>
-        </VStack>
+        {/* Product Details */}
+        <Box position="absolute" bottom="-123px" left="0" right="0">
+          <VStack
+            roundedTopRight="4xl"
+            gap={2}
+            p={4}
+            align="start"
+            bg="brand.navbar"
+          >
+            <Collapsible.Root>
+              <Collapsible.Trigger>
+                <Text cursor="pointer" fontSize="lg" fontWeight="medium">
+                  {title}
+                </Text>
+              </Collapsible.Trigger>
+              <Collapsible.Content>
+                <Box p={4}>
+                  <Text color="brand.text">{description}</Text>
+                </Box>
+              </Collapsible.Content>
+            </Collapsible.Root>
+
+            <Text
+              fontSize="xl"
+              fontWeight="bold"
+              color="brand.HeroProductsTitle"
+            >
+              {currency} {price.toLocaleString()}
+            </Text>
+          </VStack>
+
+          {/* Buy now / add to cart Content */}
+          <Flex align="center" justify="space-between" px={9} >
+            <Box color="brand.text" fontWeight="bold" cursor="pointer">
+              Buy Now
+            </Box>
+            <Box color="brand.primary" fontWeight="bold" cursor="pointer">
+              Add to Cart
+            </Box>
+          </Flex>
+        </Box>
       </Box>
-
-      {/* Buy now / add to cart Content */}
-      <Flex align="center" paddingBottom={10} justify="space-between" px={10}>
-        <Box color="brand.text" fontWeight="bold" cursor="pointer">
-          Buy Now
-        </Box>
-        <Box color="brand.primary" fontWeight="bold" cursor="pointer">
-          Add to Cart
-        </Box>
-      </Flex>
     </Box>
   );
 };
