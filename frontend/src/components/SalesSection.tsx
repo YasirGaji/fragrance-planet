@@ -189,7 +189,7 @@ const SalesSection: React.FC<SalesSectionProps> = ({
         )}
 
         {/* Title */}
-        <Flex align="center" justifyContent="center" mb={10}>
+        <Flex align="center" justifyContent="center" mb={20}>
           <Box>
             <Box
               px={6}

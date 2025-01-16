@@ -74,7 +74,7 @@ const HeroProducts = () => {
 
   return (
     <Box>
-      <Container pt={10} bg={"brand.HeroProducts"} maxW="container.xl">
+      <Container pt={10} bg={"brand.HeroProducts"} maxW="full">
         <ProductSection
           title="Perfume Set"
           discount="30% discount off!"
