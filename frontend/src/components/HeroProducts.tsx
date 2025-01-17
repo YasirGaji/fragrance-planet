@@ -44,28 +44,28 @@ const HeroProducts = () => {
   const salesData = [
     {
       id: "1",
-      image: "/images/product1.jpeg",
+      image: "/images/sales1.jpeg",
       title: "Body Spray Lotion",
       price: 18500,
       description: "A luxurious body spray with lasting fragrance...",
     },
     {
       id: "2",
-      image: "/images/product2.jpeg",
+      image: "/images/sales2.jpeg",
       title: "Body Spray Lotion",
       price: 18500,
       description: "A luxurious body spray with lasting fragrance...",
     },
     {
       id: "3",
-      image: "/images/product3.jpeg",
+      image: "/images/sales3.jpeg",
       title: "Body Spray Lotion",
       price: 18500,
       description: "A luxurious body spray with lasting fragrance...",
     },
     {
       id: "4",
-      image: "/images/product4.jpeg",
+      image: "/images/sales4.jpeg",
       title: "Body Spray Lotion",
       price: 18500,
       description: "A luxurious body spray with lasting fragrance...",
