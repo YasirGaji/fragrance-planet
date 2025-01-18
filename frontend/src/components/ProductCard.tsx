@@ -88,7 +88,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </VStack>
 
           {/* Buy now / add to cart Content */}
-          <Flex align="center" justify="space-between" px={9} >
+          <Flex align="center" justify="space-between" px={9}>
             <Box color="brand.text" fontWeight="bold" cursor="pointer">
               Buy Now
             </Box>

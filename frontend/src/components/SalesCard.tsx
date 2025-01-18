@@ -12,10 +12,7 @@ interface SalesCardProps {
   description?: string;
 }
 
-const SalesCard: React.FC<SalesCardProps> = ({
-  image,
-  title,
-}) => {
+const SalesCard: React.FC<SalesCardProps> = ({ image, title }) => {
   return (
     <Box
       rounded="4xl"

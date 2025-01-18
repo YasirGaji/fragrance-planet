@@ -110,7 +110,7 @@ it("contains correct navigation links", () => {
   const links = {
     "/cart": /cart/i,
     "/about": /about us/i,
-    "/login": /sign in/i,
+    "/auth/login": /sign in/i,
   };
 
   Object.entries(links).forEach(([href, textMatch]) => {

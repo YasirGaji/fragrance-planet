@@ -185,7 +185,7 @@ const Navbar = () => {
               Search
             </Button>
 
-            <Link href="/login">
+            <Link href="/auth/login">
               <Button
                 background="brand.secondary"
                 color="white"
@@ -377,11 +377,8 @@ const Navbar = () => {
                         bg="brand.secondary"
                         color="white"
                         size="lg"
-                        onClick={() => {
-                          /* handle sign in */
-                        }}
                       >
-                        Sign In
+                        <Link href="/auth/login">Sign In</Link>
                       </Button>
                     </Box>
                   </VStack>

@@ -14,7 +14,9 @@ interface ReviewCardProps {
 const ReviewCard: React.FC<ReviewCardProps> = ({ author, rating, review }) => {
   return (
     <Box
-      bgGradient="to-r" gradientFrom="red.200" gradientTo="blue.200"
+      bgGradient="to-r"
+      gradientFrom="red.200"
+      gradientTo="blue.200"
       backdropFilter="blur(12px)"
       p={6}
       borderRadius="xl"

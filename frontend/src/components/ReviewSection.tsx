@@ -1,4 +1,12 @@
-import { Box, Container, Grid, GridItem, Heading, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Grid,
+  GridItem,
+  Heading,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import ReviewCard from "./ReviewCard";
 
 interface Review {
@@ -23,7 +31,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ reviews }) => {
       position="relative"
       bg="brand.primary"
       overflow="hidden"
-      maxHeight={{base: "", md: "888px"}} 
+      maxHeight={{ base: "", md: "888px" }}
     >
       {/* Background Gradient Effect */}
       <Box
@@ -37,7 +45,6 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ reviews }) => {
           position="absolute"
           inset={0}
           bg="radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.1) 100%)"
-         
         />
       </Box>
 
@@ -46,16 +53,13 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ reviews }) => {
         <VStack gap={3} mb={16} textAlign="center">
           <Heading
             as="h2"
-            fontSize={{ base: '3xl', md: '4xl' }}
+            fontSize={{ base: "3xl", md: "4xl" }}
             fontWeight="bold"
             color="gray.800"
           >
             Our reviews
           </Heading>
-          <Text 
-            fontSize={{ base: 'lg', md: 'xl' }}
-            color="gray.700"
-          >
+          <Text fontSize={{ base: "lg", md: "xl" }} color="gray.700">
             What our customers say about us.
           </Text>
         </VStack>
@@ -63,9 +67,9 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ reviews }) => {
         {/* Reviews Grid */}
         <Grid
           templateColumns={{
-            base: '1fr',
-            md: 'repeat(2, 1fr)',
-            lg: 'repeat(3, 1fr)',
+            base: "1fr",
+            md: "repeat(2, 1fr)",
+            lg: "repeat(3, 1fr)",
           }}
           gap={8}
           autoFlow="dense"
