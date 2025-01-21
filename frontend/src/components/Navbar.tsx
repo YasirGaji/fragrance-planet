@@ -375,10 +375,11 @@ const Navbar = () => {
                         w="100%"
                         variant="solid"
                         bg="brand.secondary"
-                        color="white"
                         size="lg"
                       >
-                        <Link href="/auth/login">Sign In</Link>
+                        <Link color="white" href="/auth/login">
+                          Sign In
+                        </Link>
                       </Button>
                     </Box>
                   </VStack>
