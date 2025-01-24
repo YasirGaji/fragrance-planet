@@ -219,7 +219,7 @@ const SalesSection: React.FC<SalesSectionProps> = ({
 
         {/* Products Grid */}
 
-        <Box bg="#FCB700" rounded="xl" overflow="hidden" shadow="4xl" py={20}>
+        <Box bg="#FEE6A6" rounded="xl" overflow="hidden" shadow="4xl" py={20}>
           <Flex align="center" justifyContent="center">
             {renderProducts()}
           </Flex>

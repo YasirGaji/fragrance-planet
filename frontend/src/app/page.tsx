@@ -1,8 +1,8 @@
 "use client";
 
 import Header from "@/components/Header";
-import HeroProducts from "@/components/HeroProducts";
-import ReviewsSection from "@/components/ReviewSection";
+import HeroProducts from "@/components/Products/HeroProducts";
+import ReviewsSection from "@/components/Testimonials/ReviewSection";
 import { Box } from "@chakra-ui/react";
 
 const reviewsData = [

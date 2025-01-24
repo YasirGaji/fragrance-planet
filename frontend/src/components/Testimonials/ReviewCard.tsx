@@ -1,6 +1,6 @@
 import { Box, HStack, Text } from "@chakra-ui/react";
 import { Star } from "lucide-react";
-import { Avatar } from "./ui/avatar";
+import { Avatar } from "../ui/avatar";
 
 interface ReviewCardProps {
   author: {
