@@ -1,6 +1,8 @@
 "use client";
 
 import SalesSection from "@/components/Products/SalesSection";
+import { CartsData } from "@/datas/CartsData";
+import { SalesData } from "@/datas/SalesData";
 import {
   Box,
   VStack,
@@ -27,68 +29,11 @@ interface CartItem {
   quantity: number;
 }
 
-// Dummy data
-const dummyCartItems: CartItem[] = [
-  {
-    id: "1",
-    name: "Body Spray Lotion",
-    image: "/images/cart-image.png",
-    price: 18500.0,
-    weight: 0.2,
-    inStock: true,
-    brandLogo: "/images/brand-logo.png",
-    brandLogoTitle: "Brand Logo",
-    quantity: 2,
-  },
-  {
-    id: "2",
-    name: "Spray Lotion Z",
-    image: "/images/sales2.jpeg",
-    price: 18500.0,
-    weight: 0.2,
-    inStock: true,
-    brandLogo: "/images/brand-logo.png",
-    brandLogoTitle: "Brand Logo",
-    quantity: 1,
-  },
-];
-
-const salesData = [
-  {
-    id: "1",
-    image: "/images/sales1.jpeg",
-    title: "Body Spray Lotion",
-    price: 18500,
-    description: "A luxurious body spray with lasting fragrance...",
-  },
-  {
-    id: "2",
-    image: "/images/sales2.jpeg",
-    title: "Body Spray Lotion",
-    price: 18500,
-    description: "A luxurious body spray with lasting fragrance...",
-  },
-  {
-    id: "3",
-    image: "/images/sales3.jpeg",
-    title: "Body Spray Lotion",
-    price: 18500,
-    description: "A luxurious body spray with lasting fragrance...",
-  },
-  {
-    id: "4",
-    image: "/images/sales4.jpeg",
-    title: "Body Spray Lotion",
-    price: 18500,
-    description: "A luxurious body spray with lasting fragrance...",
-  },
-];
-
 const Cart = () => {
-  const cartItems = dummyCartItems;
+  const cartItems: CartItem[] = CartsData;
   const subtotal = cartItems.reduce((sum, item) => sum + item.price, 0);
 
-  if (cartItems.length === 2) {
+  if (cartItems.length === 1) {
     return (
       <Container maxW="container.xl" py="20" px="14">
         <Box
@@ -144,7 +89,7 @@ const Cart = () => {
   }
 
   return (
-    <Container maxW="container.xl" py="20" px="14">
+    <Container maxW="container.xl" py="20" px="">
       <Grid templateColumns={{ base: "1fr", lg: "2fr 1fr" }} gap={8}>
         {/* Cart Items Section */}
         <Box
@@ -243,7 +188,7 @@ const Cart = () => {
           <SalesSection
             title="HOT SALES"
             discount=""
-            products={salesData}
+            products={SalesData}
             displayMode="grid"
             itemsPerRow={4}
           />

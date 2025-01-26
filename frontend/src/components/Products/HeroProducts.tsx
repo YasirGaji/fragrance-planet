@@ -1,91 +1,24 @@
 import { Box, Container } from "@chakra-ui/react";
 import ProductSection from "./ProductSection";
 import SalesSection from "./SalesSection";
+import { ProductsData } from "@/datas/ProductsData";
+import { SalesData } from "@/datas/SalesData";
 
 const HeroProducts = () => {
-  const productData = [
-    {
-      id: "1",
-      image: "/images/product1.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-    {
-      id: "2",
-      image: "/images/product2.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-    {
-      id: "3",
-      image: "/images/product3.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-    {
-      id: "4",
-      image: "/images/product4.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-    {
-      id: "5",
-      image: "/images/product5.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-  ];
-
-  const salesData = [
-    {
-      id: "1",
-      image: "/images/sales1.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-    {
-      id: "2",
-      image: "/images/sales2.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-    {
-      id: "3",
-      image: "/images/sales3.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-    {
-      id: "4",
-      image: "/images/sales4.jpeg",
-      title: "Body Spray Lotion",
-      price: 18500,
-      description: "A luxurious body spray with lasting fragrance...",
-    },
-  ];
-
   return (
     <Box>
       <Container pt={10} bg={"brand.HeroProducts"} maxW="full">
         <ProductSection
           title="Perfume Set"
           discount="30% discount off!"
-          products={productData}
+          products={ProductsData}
           displayMode="carousel"
         />
 
         <ProductSection
           title="Designers"
           discount="30% discount off!"
-          products={productData}
+          products={ProductsData}
           displayMode="carousel"
         />
       </Container>
@@ -94,7 +27,7 @@ const HeroProducts = () => {
         <SalesSection
           title="Sales"
           discount="50% discount off!"
-          products={salesData}
+          products={SalesData}
           displayMode="grid"
           itemsPerRow={4}
         />
