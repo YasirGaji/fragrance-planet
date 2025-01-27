@@ -156,6 +156,7 @@ const Cart = () => {
             <Text fontSize="xl" fontWeight="bold" mb={6}>
               CART SUMMARY
             </Text>
+
             <hr style={{ marginBottom: "1.5rem" }} />
 
             <HStack justify="space-between" mb={4}>
