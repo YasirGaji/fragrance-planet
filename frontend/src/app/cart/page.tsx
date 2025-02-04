@@ -1,8 +1,8 @@
 "use client";
 
 import SalesSection from "@/components/Products/SalesSection";
-import { CartsData } from "@/datas/CartsData";
-import { SalesData } from "@/datas/SalesData";
+import { CartsData } from "@/.data/CartsData";
+import { SalesData } from "@/.data/SalesData";
 import {
   Box,
   VStack,

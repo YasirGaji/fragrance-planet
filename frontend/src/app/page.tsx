@@ -3,7 +3,7 @@
 import Header from "@/components/Header";
 import HeroProducts from "@/components/Products/HeroProducts";
 import ReviewsSection from "@/components/Testimonials/ReviewSection";
-import { ReviewsData } from "@/datas/ReviewsData";
+import { ReviewsData } from "@/.data/ReviewsData";
 import { Box } from "@chakra-ui/react";
 
 export default function HomePage() {

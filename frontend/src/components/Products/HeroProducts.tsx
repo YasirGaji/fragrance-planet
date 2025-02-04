@@ -1,8 +1,8 @@
 import { Box, Container } from "@chakra-ui/react";
 import ProductSection from "./ProductSection";
 import SalesSection from "./SalesSection";
-import { ProductsData } from "@/datas/ProductsData";
-import { SalesData } from "@/datas/SalesData";
+import { ProductsData } from "@/.data/ProductsData";
+import { SalesData } from "@/.data/SalesData";
 
 const HeroProducts = () => {
   return (
